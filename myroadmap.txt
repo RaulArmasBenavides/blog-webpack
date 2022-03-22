@@ -1,0 +1,43 @@
+==============================
+PÁGINAS WEB: 
+==============================
+En desarrollo: 
+
+Marketplace emprendimiento de Ropa  ( Webpack , Javascript, CSS, HTML)
+
+Portafolio personal de TI ( Webpack , Javascript, CSS, HTML)
+
+Pendiente :
+
+ - Blog de agencia de viajes ( Webpack , Javascript, CSS, HTML)
+
+ - Reservas de Hotel (Hotel propio) ( Webpack , Javascript, CSS, HTML)
+
+ - Reserva de Hotel (Clon de Booking) ( Webpack , Javascript, CSS, HTML)
+
+ - Ventas por suscripción  ( Webpack , Javascript, CSS, HTML)
+
+ - Red social (Clon de facebook , clon de Tiktok, Clon de Instagram, Clon de Linkedin) ( Tecnología por evaluar)
+
+
+==============================
+APPS WEB: 
+==============================
+
+En desarrollo : 
+Intranet de un colegio ( ASP MVC .NET)  ------> en curso
+
+Pendiente : 
+
+App gestión de dotación - Proyecto Tambo (Angular) 
+
+
+==============================
+APPS DESKTOP: 
+==============================
+
+En desarrollo : 
+ERP + Intranet   ( C#) 
+ERP Compra y Venta ( VB NET) 
+ERP empresa de motores eléctricos (JAVA)
+
