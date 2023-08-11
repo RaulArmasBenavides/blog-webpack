@@ -4,9 +4,8 @@ const MiniCssExtractPlugin    = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 // const MinifyPlugin            = require('babel-minify-webpack-plugin');
 
-
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     optimization: {
     // minimizer: [ new OptimizeCssAssetsPlugin() ]
     },
