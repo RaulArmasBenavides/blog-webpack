@@ -1,13 +1,36 @@
 'use strict'
-import './css/estilos.css';
+import '../css/index.css';
 import 'normalize.css';
 
+// Verifica si la URL actual es 'condicionParaCargarAbout.html'
+if (window.location.href.includes('about.html')) {
+  console.log("acabo de cargar")
+  import("./about")
+    .then(aboutModule => {
+      // Aquí el módulo 'about' ha sido cargado y puedes usarlo
+      console.log(aboutModule);
+    })
+    .catch(err => {
+      console.error("Error al cargar el módulo 'about':", err);
+    });
+}
+
+
+if(window.location.href.includes('portafolio.html')){
+
+}
+if(window.location.href.includes('contacto.html')){
+
+}
+else{
+// require("../src/js/about");
 //buttons
 let btnweb = document.getElementById("btnweb");
 let btnapi = document.getElementById("btnapi");
 let btndes = document.getElementById("btndes");
 let btnmob = document.getElementById("btnmob");
 let btnall = document.getElementById("btnall");
+
 
 
 const showAllRepository =  () => {
@@ -123,6 +146,4 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
-
-
-
+}
