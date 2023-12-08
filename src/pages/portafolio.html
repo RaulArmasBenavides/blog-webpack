@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="header">
+        <header>
+          <div id="logo">
+            <h1>Portafolio</h1>
+          </div>
+          <div class="clearfix"></div>
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="about.html">Sobre mi</a></li>
+              <li><a href="#">Portafolio</a></li>
+              <li><a href="articulos.html">Artículos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+      </section>
+    <!-- <header class="header">
+        <a href="index.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+    </nav> -->
+    <main class="contenedor">
+        <div class="catalogo-proyectos">
+            <div class="row">
+                <div class="proyecto" style="background-color:#bbb;">
+                  <h2>Proyecto customización de  registro de contratos leasing en un sistema ERP</h2>
+                  <h4>Sector financiero ERP</h4>
+                  <p class="ver-detalle" data-modal-target="#modalProyecto1">Ver Detalle</p>
+                </div>
+          
+                <div class="proyecto" category="mob" style="background-color:#ddd;">
+                  <h2>Sistema base para productos de financiamiento</h2>
+                  <h4>Sector financiero - Cliente COFIDE</h4>
+                  <p class="ver-detalle" data-modal-target="#modalProyecto2">Ver Detalle</p>
+                </div>
+            </div>
+          
+            <div class="row">
+              <div class="proyecto" style="background-color:#bbb;">
+                <h2>Proyecto Módulo de Dotación</h2>
+                <h4>Sector Retail</h4>
+                <p class="ver-detalle" data-modal-target="#modalProyecto3">Ver Detalle</p>
+              </div>
+              <div class="proyecto" style="background-color:#bbb;">
+                <h2>Proyecto Módulo de requerimientos de activos y suministros </h2>
+                <h4>Sector Retail</h4>
+                <p class="ver-detalle" data-modal-target="#modalProyecto4">Ver Detalle</p>
+              </div>
+              <div class="proyecto" style="background-color:#bbb;">
+                <h2>Proyecto notificación automática por Whatsapp </h2>
+                <h4>Sector Retail</h4>
+                <p class="ver-detalle" data-modal-target="#modalProyecto5">Ver Detalle</p>
+              </div>
+            </div>
+          
+            <div class="row">
+              <div class="proyecto" category="web" style="background-color:#ddd;">
+                <h2>Mantenedor de asignación de zonas y actividades de contratistas </h2>
+                <h4>Sector eléctrico</h4>
+                <p class="ver-detalle" data-modal-target="#modalProyecto6">Ver Detalle</p>
+            </div>
+          
+          
+            <div class="proyecto" category="api" style="background-color:#bbb;">
+              <h4>Sector eléctrico</h4>
+              <p>Servicio web que permite generar procesos de pagos.</p>
+              <p class="ver-detalle" data-modal-target="#modalProyecto7">Ver Detalle</p>
+            </div>
+          
+            <div class="proyecto" category="des" style="background-color:#ccc;">
+              <h2>Módulo Orden de Compra</h2>
+              <p>Aplicación de escritorio de gestión de compras</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- MODALES -->
+        <div id="modalProyecto1" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalle del Proyecto 1</h2>
+                <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
+                <p>Descripción del Proyecto 1...</p>
+            </div>
+        </div>
+        <div id="modalProyecto2" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalle del Proyecto 2</h2>
+                <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
+                <p>Descripción del Proyecto 2...</p>
+            </div>
+        </div>
+        <div id="modalProyecto3" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalle del Proyecto 3</h2>
+                <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
+                <p>Descripción del Proyecto 3...</p>
+            </div>
+        </div>
+        <div id="modalProyecto4" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalle del Proyecto 4</h2>
+                <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
+                <p>Descripción del Proyecto 4...</p>
+            </div>
+        </div>
+        <div id="modalProyecto5" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalle del Proyecto 5</h2>
+                <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
+                <p>Descripción del Proyecto 5...</p>
+            </div>
+        </div>
+        <div id="modalProyecto6" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalle del Proyecto 6</h2>
+                <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
+                <p>Descripción del Proyecto 6...</p>
+            </div>
+        </div>
+        <div id="modalProyecto7" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Detalle del Proyecto 7</h2>
+                <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
+                <p>Descripción del Proyecto 7...</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-colum">
+                <div class="follow-us">
+                    <p>Contáctame por mis redes profesionales</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://github.com/RaulArmasBenavides"><i class="fa-brands fa-github"></i></a> 
+                    <a href="https://www.linkedin.com/in/raul-armas/"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href="#"><i class="fab fa-tiktok"></i></a> -->
+                </div>
+                <p class="rights-text">&copy; 2023 Desarrollado por Raúl Armas.</p>
+            </div>
+      
+            <!-- <div class="right-col">
+                <h1>Our Newsletter</h1>
+                <div class="border"></div>
+                <p>Enter your Email to get our news and updates.</p>
+                <form action="" class="newsletter-from">
+                <input type= "text" class="txtb" placeholder="Enter Your Email"></input>
+                <input type="submit" class="btn" value="submit">
+                </form>
+            </div> -->
+      
+        </div>
+      </footer>
+    
+</body>
+</html>

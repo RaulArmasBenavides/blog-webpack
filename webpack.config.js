@@ -3,12 +3,11 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('css-minimizer-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
-// Definición de las plantillas HTML
 const templates = [
     { template: './src/index.html', filename: './index.html', chunks: ['common','index'] },
-    { template: './src/about.html', filename: './about.html', chunks: ['common','about'] },
-    { template: './src/contacto.html', filename: './contacto.html', chunks: ['common','contacto'] },
-    { template: './src/portafolio.html', filename: './portafolio.html', chunks: ['common','portafolio'] },
+    { template: './src/pages/about.html', filename: './about.html', chunks: ['common','about'] },
+    { template: './src/pages/contacto.html', filename: './contacto.html', chunks: ['common','contacto'] },
+    { template: './src/pages/portafolio.html', filename: './portafolio.html', chunks: ['common','portafolio'] },
 ];
 
 // Creación dinámica de plugins HTML

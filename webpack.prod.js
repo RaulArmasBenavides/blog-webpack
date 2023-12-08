@@ -8,9 +8,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const templates = [
     { template: './src/index.html', filename: './index.html', chunks: ['common','index'] },
-    { template: './src/about.html', filename: './about.html', chunks: ['common','about'] },
-    { template: './src/contacto.html', filename: './contacto.html', chunks: ['common','contacto'] },
-    { template: './src/portafolio.html', filename: './portafolio.html', chunks: ['common','portafolio'] },
+    { template: './src/pages/about.html', filename: './about.html', chunks: ['common','about'] },
+    { template: './src/pages/contacto.html', filename: './contacto.html', chunks: ['common','contacto'] },
+    { template: './src/pages/portafolio.html', filename: './portafolio.html', chunks: ['common','portafolio'] },
 ];
 
 const htmlPlugins = templates.map(({ template, filename, chunks }) => 

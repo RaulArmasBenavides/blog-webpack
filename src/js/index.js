@@ -146,4 +146,32 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
+
+
+
+document.querySelectorAll('.ver-detalle').forEach(item => {
+  item.addEventListener('click', event => {
+      const modalId = item.getAttribute('data-modal-target');
+      const modal = document.querySelector(modalId);
+      modal.classList.add('show');
+      modal.querySelector('.modal-content').classList.add('show');
+  });
+});
+
+document.querySelectorAll('.close-button').forEach(item => {
+  item.addEventListener('click', event => {
+      const modal = item.closest('.modal');
+      modal.classList.remove('show');
+      modal.querySelector('.modal-content').classList.remove('show');
+  });
+});
+
+// Cerrar el modal al hacer clic fuera de él
+window.onclick = function(event) {
+  if (event.target.className.includes('modal')) {
+      event.target.classList.remove('show');
+      event.target.querySelector('.modal-content').classList.remove('show');
+  }
+}
+
 }
