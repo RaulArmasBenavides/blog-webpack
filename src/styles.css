@@ -6,18 +6,16 @@
     --gris : #757575;
 }
 
-
 /*globales*/ 
 html {
-    font-size:62.5%;
+    /* font-size:62.5%; */
     box-sizing: inherit;
     /*scroll-snap-type: y mandatory;*/
 }
 
-
-body{
-    font-size: 20px;
-    font-family:'Courier New', Courier, monospace, sans-serif;
+body {
+    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
 }
 
 
@@ -27,20 +25,20 @@ body{
     background-repeat: no-repeat;
   }
   
-  .header__texto
-  {
+.header__texto
+{
       color:var(--blanco);
       text-align: center;
   
-  }
-
-
-
+}
 
 h2,h3{
     text-align: center;
 }
 
+.texto-justificado{
+    text-align: justify;
+}
 
 img {
     max-width: 100%;
@@ -290,15 +288,6 @@ p{
     align-items: center;
     flex-wrap: wrap;
 }
-
-
-
-
-
-
-
-
-
 
 
 

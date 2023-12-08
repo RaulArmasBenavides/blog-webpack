@@ -17,21 +17,21 @@
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="about.html">Sobre mi</a></li>
-        <li><a href="portafolio.html">Portafolio</a></li>
+        <!-- <li><a href="portafolio.html">Portafolio</a></li> -->
         <li><a href="articulos.html">Artículos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 </section>
-<p>Aquí puedes ver una lista de mis proyectos profesionales y personales</p>
+<h4>Aquí puedes ver una lista de mis proyectos profesionales y personales</h4>
 <div id="btnContainer">
   <!--<button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> -->
   <button class="btn active" type="button" id="btnall" category="all" ><i class="fa fa-th-large"></i>All</button>
   <button class="btn active" type="button" id="btndes" category="des" ><i class="fa fa-th-large"></i>Desktop apps</button>
   <button class="btn active" type="button" id="btnapi" category="api" ><i class="fa fa-th-large"></i>APIs</button>
   <button class="btn active" type="button" id="btnweb" category="web" ><i class="fa fa-th-large"></i>Web apps</button>
-  <button class="btn active" type="button" id="btnmob" category="mob" ><i class="fa fa-th-large"></i>Mobile apps</button>
+  <button class="btn active" type="button" id="btnmob" category="mob" ><i class="fa fa-th-large"></i>Mobile apps</button> 
 </div>
 <br>
 
@@ -39,11 +39,10 @@
   <div class="catalogo-proyectos">
       <div class="row">
           <div class="proyecto" style="background-color:#bbb;">
-            <h2>Proyecto customización de  registro de contratos leasing en un sistema ERP</h2>
+            <h2>Proyecto customización de registro de contratos leasing en un sistema ERP</h2>
             <h4>Sector financiero ERP</h4>
             <p class="ver-detalle" data-modal-target="#modalProyecto1">Ver Detalle</p>
           </div>
-    
           <div class="proyecto" category="mob" style="background-color:#ddd;">
             <h2>Sistema base para productos de financiamiento</h2>
             <h4>Sector financiero - Cliente COFIDE</h4>
@@ -76,8 +75,8 @@
           <p class="ver-detalle" data-modal-target="#modalProyecto6">Ver Detalle</p>
       </div>
     
-    
       <div class="proyecto" category="api" style="background-color:#bbb;">
+        <h2>Servicio web de pagos</h2>
         <h4>Sector eléctrico</h4>
         <p>Servicio web que permite generar procesos de pagos.</p>
         <p class="ver-detalle" data-modal-target="#modalProyecto7">Ver Detalle</p>
@@ -94,9 +93,16 @@
   <div id="modalProyecto1" class="modal">
       <div class="modal-content">
           <span class="close-button">&times;</span>
-          <h2>Detalle del Proyecto 1</h2>
-          <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
-          <p>Descripción del Proyecto 1...</p>
+          <h2>Customización de registro de contratos leasing en un sistema ERP</h2>
+          <p><strong>ERP</strong> <strong>Sector financiero</strong></p>
+          <p class="texto-justificado">En este proyecto implementé una customización de un módulo de contratos dentro de un ERP, realizando, modificando y creando extensiones 
+            para la creación de nuevos contratos de un cliente de leasing del mercado suizo. Me enfoqué en dos tipos principales de contratos: 
+            Leasingvertrag (contrato de leasing), Mietvertrag (contrato de alquiler)
+            La personalización implicó desarrollar un sistema flexible y robusto capaz de manejar diferentes cálculos de interés, 
+            ajustándose a las variaciones en las tasas moratorias, factores de riesgo y otros elementos críticos en los cálculos 
+            financieros definidos por el usuario. Para ello se solicitó la modificación de la interface gráfica ( GUI) así como algoritmos internos.
+            La tecnología utilizada fue VB NET.</p>
+            <img src="assets/coopera.jpg" alt="Coopera"> 
       </div>
   </div>
   <div id="modalProyecto2" class="modal">
@@ -110,9 +116,17 @@
   <div id="modalProyecto3" class="modal">
       <div class="modal-content">
           <span class="close-button">&times;</span>
-          <h2>Detalle del Proyecto 3</h2>
-          <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
-          <p>Descripción del Proyecto 3...</p>
+          <h2>Aplicativo web dotación de recursos humanos</h2>
+          <p><strong>Eficiencia operativa</strong> <strong>SSD</strong></p>  
+          <p class="texto-justificado">En este proyecto implementé un módulo en una plataforma SPA para mantenimiento de personal y requerimientos 
+            registrados por jefes autorizados y enviado al personal de recursos humanos y automatización los procesos 
+            de dotación dentro del área de control y suministros. La problemática era que el área de operaciones 
+            tenía un número de personal que necesitaba, el área de recursos humanos tenía otro número diferente y TI 
+            debía solucionar el problema e “igualar” ambos números. La implementación consideró algunos cálculos de ambas áreas 
+            y finalmente se llegó a igualar ese número y a armonizar el trabajo entre esas dos áreas.
+          </p>
+          <p>Utilicé tecnología Angular Material y en el backend WCF.</p>
+          <img src="assets/dota1.jpg" alt="Proyecto 1"> 
       </div>
   </div>
   <div id="modalProyecto4" class="modal">
@@ -134,9 +148,16 @@
   <div id="modalProyecto6" class="modal">
       <div class="modal-content">
           <span class="close-button">&times;</span>
-          <h2>Detalle del Proyecto 6</h2>
-          <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
-          <p>Descripción del Proyecto 6...</p>
+          <h2>Mantenedor de asignación de zonas y actividades de contratistas</h2>
+          <p>En este proyecto implementé un mantenedor de asignación de capacidades y zonificación 
+            para subcontratistas en el ámbito de las conexiones eléctricas. 
+            Mi experiencia en estas tecnologías ha sido fundamental para crear una interfaz de usuario intuitiva y una arquitectura de backend robusta, 
+            lo que permite a los usuarios establecer y gestionar de manera efectiva las capacidades y áreas de operación específicas de cada subcontratista.
+            La integración de estas tecnologías asegura una asignación eficiente y precisa de los subcontratistas, optimizando 
+            la ejecución de los proyectos y mejorando la gestión de recursos.
+            Este sistema ha sido desarrollado utilizando tecnologías jQuery, Bootstrap 4 y .NET MVC para aplicaciones web.
+          </p>
+          <img src="assets/lds1.jpg" alt="ProyectoLDS"> 
       </div>
   </div>
   <div id="modalProyecto7" class="modal">
@@ -153,17 +174,20 @@
 
 <footer>
   <div class="footer-container">
-      <div class="left-colum">
-          <div class="follow-us">
-              <p>Contáctame por mis redes profesionales</p>
-          </div>
-          <div class="social-media">
-              <a href="https://github.com/RaulArmasBenavides"><i class="fa-brands fa-github"></i></a> 
-              <a href="https://www.linkedin.com/in/raul-armas/"><i class="fa-brands fa-linkedin"></i></a>
-              <!-- <a href="#"><i class="fab fa-tiktok"></i></a> -->
-          </div>
-          <p class="rights-text">&copy; 2023 Desarrollado por Raúl Armas.</p>
-      </div>
+
+
+    <div class="follow-us">
+      <p>Contáctame por mis redes profesionales</p>
+  </div>
+  <div class="social-media">
+      <a href="https://github.com/RaulArmasBenavides"><i class="fa-brands fa-github"></i></a> 
+      <a href="https://www.linkedin.com/in/raul-armas/"><i class="fa-brands fa-linkedin"></i></a>
+      <!-- <a href="#"><i class="fab fa-tiktok"></i></a> -->
+  </div>
+  <p class="rights-text">&copy; 2023 Desarrollado por Raúl Armas.</p>
+      <!-- <div class="left-colum">
+
+      </div> -->
 
       <!-- <div class="right-col">
           <h1>Our Newsletter</h1>
