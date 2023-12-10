@@ -4,6 +4,7 @@
     --primario : #FFC107;
     --secundario : #0097A7;
     --gris : #757575;
+    --navegacion : #333;
 }
 
 /*globales*/ 
@@ -20,7 +21,7 @@ body {
 
 
 .header2 {
-    background-image: url(../src/assets/cusco.jpg);
+    /* background-image: url(../src/assets/cusco.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -141,9 +142,6 @@ img {
         background-color: var(--gris);
     }
 }
-
-
-
 
 /**cabecera **/
 .preset1
@@ -453,7 +451,14 @@ header .contenedor {
 }
 .ver-detalle {
     cursor: pointer;
-    /* Estilos adicionales */
+    color: blue; /* Color azul, típico de los enlaces */
+    text-decoration: underline; /* Subrayado para indicar que es un enlace */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.ver-detalle:hover {
+    color: darkblue; /* Un color más oscuro para el hover */
+    text-decoration: none; /* Opcional: remover el subrayado en hover */
 }
 
 /* Clase para mostrar el modal */
