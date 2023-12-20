@@ -1,5 +1,4 @@
 import '../css/about.css';
-console.log("conchatumaree");
 const languageButton = document.getElementById('languageButton');
 const content = document.getElementById('content');
 
@@ -18,7 +17,7 @@ const spanishContent = {
     estoy aprendiendo alemán. Me considero una persona bastante proactiva y autodidacta, me gusta estar en constante aprendizaje 
     y siempre aplico la mejora continua en las actividades que realizo. 
     Soy bachiller de Ingeniería Industrial de la Universidad Nacional Mayor de San Marcos 
-    y bachiller en Ingeniería de Sistemas y Cómputo de la Universidad Inca Garcilaso de la Vega. .`
+    y bachiller en Ingeniería de Sistemas y Cómputo de la Universidad Inca Garcilaso de la Vega.`
 };
 
 const englishContent = {

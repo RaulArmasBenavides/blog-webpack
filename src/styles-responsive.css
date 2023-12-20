@@ -1,0 +1,36 @@
+@media (min-width : 480px){
+    .navegacion{
+        flex-direction: row;
+    }
+}
+    
+@media (min-width : 480px){
+        .navegacion__enlace{
+            flex-direction: row;
+        }
+    }
+
+@media (min-width: 480px)
+{
+    body{
+        background-color: var(--principal);
+    }
+}
+
+@media (min-width: 480px)
+{
+    .preset1{
+        flex-direction: row;
+    }
+}
+
+
+/* Estilo responsivo para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%; /* Ancho más grande para pantallas pequeñas */
+        margin: 5% auto;
+        padding: 10px;
+        transform: translateY(-50px);
+    }
+}

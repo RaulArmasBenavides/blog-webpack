@@ -15,3 +15,20 @@
 .profile h2, .profile p {
     margin: 0;
 }
+
+.texto-justificado{
+    font-size: 40px;
+}
+
+p{
+    font-size: 1.3em;
+}
+.wrapper {
+    padding: 20px;
+
+    margin-right: 40px;
+}
+.wrapper p{
+    text-align: justify;
+    font-size: 1em;
+}

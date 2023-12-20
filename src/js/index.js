@@ -146,9 +146,6 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
-
-
-
 document.querySelectorAll('.ver-detalle').forEach(item => {
   item.addEventListener('click', event => {
       const modalId = item.getAttribute('data-modal-target');

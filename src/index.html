@@ -24,8 +24,9 @@
     </nav>
   </header>
 </section>
-<h4>Aquí puedes ver una lista de mis proyectos profesionales y personales</h4>
+
 <div id="btnContainer">
+  <h4>Aquí puedes ver una lista de mis proyectos profesionales y personales</h4>
   <!--<button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> -->
   <button class="btn active" type="button" id="btnall" category="all" ><i class="fa fa-th-large"></i>All</button>
   <button class="btn active" type="button" id="btndes" category="des" ><i class="fa fa-th-large"></i>Desktop apps</button>
@@ -38,53 +39,53 @@
 <main class="contenedor">
   <div class="catalogo-proyectos">
       <div class="row">
-          <div class="proyecto" style="background-color:#bbb;">
+          <div class="proyecto">
             <h2>Proyecto customización de registro de contratos leasing en un sistema ERP</h2>
-            <h4>Sector financiero ERP</h4>
+            <h4>Sector financiero ERP <a>(2022)</a></h4>
             <p class="ver-detalle" data-modal-target="#modalProyecto1">Ver Detalle</p>
           </div>
-          <div class="proyecto" category="mob" style="background-color:#ddd;">
-            <h2>Sistema base para productos de financiamiento</h2>
-            <h4>Sector financiero - Cliente COFIDE</h4>
+          <div class="proyecto" category="mob">
+            <h2>Sistema base para productos de financiamiento de créditos de cobertura</h2>
+            <h4>Sector financiero - Cliente COFIDE <a>(2023)</a></h4>
             <p class="ver-detalle" data-modal-target="#modalProyecto2">Ver Detalle</p>
           </div>
       </div>
     
       <div class="row">
-        <div class="proyecto" style="background-color:#bbb;">
+        <div class="proyecto">
           <h2>Proyecto Módulo de Dotación</h2>
-          <h4>Sector Retail</h4>
+          <h4>Sector Retail <a>(2022)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto3">Ver Detalle</p>
         </div>
-        <div class="proyecto" style="background-color:#bbb;">
+        <div class="proyecto">
           <h2>Proyecto Módulo de requerimientos de activos y suministros </h2>
-          <h4>Sector Retail</h4>
+          <h4>Sector Retail <a>(2022)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto4">Ver Detalle</p>
         </div>
-        <div class="proyecto" style="background-color:#bbb;">
-          <h2>Notificación por Whatsapp (tarea programada)</h2>
-          <h4>Sector Retail</h4>
+        <div class="proyecto">
+          <h2>Notificación por Whatsapp (tarea programada) </h2>
+          <h4>Sector Retail <a>(2022)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto5">Ver Detalle</p>
         </div>
       </div>
     
       <div class="row">
-        <div class="proyecto" category="web" style="background-color:#ddd;">
+        <div class="proyecto" category="web" >
           <h2>Mantenedor de asignación de zonas y actividades de contratistas </h2>
-          <h4>Sector eléctrico</h4>
+          <h4>Sector eléctrico <a>(2023)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto6">Ver Detalle</p>
       </div>
     
-      <div class="proyecto" category="api" style="background-color:#bbb;">
+      <div class="proyecto" category="api" >
         <h2>Servicio web de pagos</h2>
         <h4>Sector eléctrico</h4>
-        <p>Servicio web que permite generar procesos de pagos.</p>
+        <p>Servicio web que permite generar procesos de pagos. <a>(2021)</a></p>
         <p class="ver-detalle" data-modal-target="#modalProyecto7">Ver Detalle</p>
       </div>
     
-      <div class="proyecto" category="des" style="background-color:#ccc;">
+      <div class="proyecto" category="des">
         <h2>Módulo Orden de Compra</h2>
-        <p>Aplicación de escritorio de gestión de compras</p>
+        <p>Aplicación de escritorio de gestión de compras <a>(2020)</a></p>
         <p class="ver-detalle" data-modal-target="#modalProyecto4">Ver Detalle</p>
       </div>
       </div>
@@ -109,9 +110,15 @@
   <div id="modalProyecto2" class="modal">
       <div class="modal-content">
           <span class="close-button">&times;</span>
-          <h2>Detalle del Proyecto 2</h2>
-          <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
-          <p>Descripción del Proyecto 2...</p>
+          <h2>Sistema base para productos de financiamiento de créditos de cobertura </h2>
+          <p class="texto-justificado">En este proyecto, actualmente estoy desarrollando una aplicación de gestión de solicitudes 
+            de empresas por créditos de cobertura a una Corporación Financiera de Desarrollo del gobierno peruano. 
+            El proceso contempla el proceso de admisión, honramiento de la deuda y la generación 
+            de órdenes de giro y notificaciones a los beneficiarios y a las entidades financieras. 
+            El objetivo además es implementar un software base y que se pueda customizar 
+            a futuro según los nuevos programas de financiamiento promovidas por el gobierno de turno.  
+          </p>
+          <img src="assets/cofide1.jpg" alt="Coopera"> 
       </div>
   </div>
   <div id="modalProyecto3" class="modal">
@@ -133,9 +140,14 @@
   <div id="modalProyecto4" class="modal">
       <div class="modal-content">
           <span class="close-button">&times;</span>
-          <h2>Detalle del Proyecto 4</h2>
-          <!-- <img src="imagen_proyecto1.jpg" alt="Proyecto 1"> -->
-          <p>Descripción del Proyecto 4...</p>
+          <h2>Módulo de requerimientos de activos y suministros</h2>
+          <p class="texto-justificado">En este proyecto implementé un módulo de mantenimiento para registrar requerimientos de activos requeridos 
+            y utilizados por las tiendas y su notificación respectiva al área de control y suministros. 
+            La problemática era que no se contaba con un sistema y todo se enviaba por correo,
+            dificultando los procesos de atención.  Para facilitar el uso se mostró un catálogo de activos 
+            con sus respectivas imágenes, descripciones y precios unitarios.</p>
+            <img src="assets/mesa1.jpg" alt="Proyecto 1">
+            
       </div>
   </div>
   <div id="modalProyecto5" class="modal">
@@ -192,7 +204,7 @@
       <a href="https://www.linkedin.com/in/raul-armas/"><i class="fa-brands fa-linkedin"></i></a>
       <!-- <a href="#"><i class="fab fa-tiktok"></i></a> -->
   </div>
-  <p class="rights-text">&copy; 2023 Desarrollado por Raúl Armas.</p>
+  <p class="rights-text">&copy; 2023 Desarrollado por Raúl Armas Benavides.</p>
       <!-- <div class="left-colum">
 
       </div> -->

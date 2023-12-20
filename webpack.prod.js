@@ -10,6 +10,7 @@ const templates = [
     { template: './src/index.html', filename: './index.html', chunks: ['common','index'] },
     { template: './src/pages/about.html', filename: './about.html', chunks: ['common','about'] },
     { template: './src/pages/contacto.html', filename: './contacto.html', chunks: ['common','contacto'] },
+    { template: './src/pages/articulos.html', filename: './articulos.html', chunks: ['common','articulos'] },
     { template: './src/pages/portafolio.html', filename: './portafolio.html', chunks: ['common','portafolio'] },
 ];
 

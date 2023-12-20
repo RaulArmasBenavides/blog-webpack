@@ -7,15 +7,35 @@
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="contact-form">
-        <h2>Contacto</h2>
-        <form action="tu-endpoint-de-procesamiento" method="post">
-            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-            <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </div>
+	<section id="header">
+        <header>
+          <div id="logo">
+            <h1>Portafolio</h1>
+          </div>
+          <div class="clearfix"></div>
+          <nav id="menu">
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="about.html">Sobre mi</a></li>
+              <!-- <li><a href="#">Portafolio</a></li> -->
+              <li><a href="articulos.html">Artículos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+          </nav>
+        </header>
+    </section>
+	<section>
+		<div class="contact-form">
+			<h2>Contacto</h2>
+			<form action="tu-endpoint-de-procesamiento" method="post">
+				<input type="text" name="nombre" placeholder="Tu Nombre" required>
+				<input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+				<textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
+				<button type="submit">Enviar Mensaje</button>
+			</form>
+		</div>
+	</section>
+ 
 
 	<footer>
 		<div class="footer-container">
