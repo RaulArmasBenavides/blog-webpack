@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <div>
-    <h1>Desarrollador de software Raúl Armas</h1>
-  </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+    <head>
+      <title>Desarrollador- Raúl Armas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
 <body>
 <section id="header">
   <header>
-    <div id="logo">
-      <h1>Portafolio de proyectos profesionales</h1>
+    <div class="header-titles">
+      <h1>Desarrollador de software Raúl Armas</h1>
     </div>
-    <div class="clearfix"></div>
+    <div class="header-titles">
+      <h2>Portafolio de proyectos profesionales</h2>
+    </div>
     <nav id="menu">
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="about.html">Sobre mi</a></li>
-        <!-- <li><a href="portafolio.html">Portafolio</a></li> -->
         <li><a href="articulos.html">Artículos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
@@ -27,65 +26,65 @@
 
 <div id="btnContainer">
   <h4>Aquí puedes ver una lista de mis proyectos profesionales y personales</h4>
-  <!--<button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> -->
   <button class="btn active" type="button" id="btnall" category="all" ><i class="fa fa-th-large"></i>All</button>
   <button class="btn active" type="button" id="btndes" category="des" ><i class="fa fa-th-large"></i>Desktop apps</button>
   <button class="btn active" type="button" id="btnapi" category="api" ><i class="fa fa-th-large"></i>APIs</button>
   <button class="btn active" type="button" id="btnweb" category="web" ><i class="fa fa-th-large"></i>Web apps</button>
   <button class="btn active" type="button" id="btnmob" category="mob" ><i class="fa fa-th-large"></i>Mobile apps</button> 
 </div>
-<br>
+ 
 
 <main class="contenedor">
   <div class="catalogo-proyectos">
       <div class="row">
+        <h3> Sector financiero</h3>
           <div class="proyecto">
-            <h2>Proyecto customización de registro de contratos leasing en un sistema ERP</h2>
+            <p>Registro de contratos leasing en un sistema ERP</p>
             <h4>Sector financiero ERP <a>(2022)</a></h4>
             <p class="ver-detalle" data-modal-target="#modalProyecto1">Ver Detalle</p>
           </div>
           <div class="proyecto" category="mob">
-            <h2>Sistema base para productos de financiamiento de créditos de cobertura</h2>
+            <p>Sistema base para productos de financiamiento de créditos de cobertura</p>
             <h4>Sector financiero - Cliente COFIDE <a>(2023)</a></h4>
             <p class="ver-detalle" data-modal-target="#modalProyecto2">Ver Detalle</p>
           </div>
       </div>
     
       <div class="row">
+        <h3> Sector operaciones</h3>
         <div class="proyecto">
-          <h2>Proyecto Módulo de Dotación</h2>
+          <p>Proyecto Módulo de Dotación</p>
           <h4>Sector Retail <a>(2022)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto3">Ver Detalle</p>
         </div>
         <div class="proyecto">
-          <h2>Proyecto Módulo de requerimientos de activos y suministros </h2>
+          <p>Proyecto Módulo de requerimientos de activos y suministros </p>
           <h4>Sector Retail <a>(2022)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto4">Ver Detalle</p>
         </div>
         <div class="proyecto">
-          <h2>Notificación por Whatsapp (tarea programada) </h2>
+          <p>Notificación por Whatsapp</p>
           <h4>Sector Retail <a>(2022)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto5">Ver Detalle</p>
         </div>
       </div>
     
       <div class="row">
+        <h3> Sector eléctrico</h3>
         <div class="proyecto" category="web" >
-          <h2>Mantenedor de asignación de zonas y actividades de contratistas </h2>
+          <p>Mantenedor de asignación de zonas y actividades de contratistas </p>
           <h4>Sector eléctrico <a>(2023)</a></h4>
           <p class="ver-detalle" data-modal-target="#modalProyecto6">Ver Detalle</p>
       </div>
     
       <div class="proyecto" category="api" >
-        <h2>Servicio web de pagos</h2>
+        <p>Servicio web de pagos</p>
         <h4>Sector eléctrico</h4>
-        <p>Servicio web que permite generar procesos de pagos. <a>(2021)</a></p>
         <p class="ver-detalle" data-modal-target="#modalProyecto7">Ver Detalle</p>
       </div>
     
       <div class="proyecto" category="des">
-        <h2>Módulo Orden de Compra</h2>
-        <p>Aplicación de escritorio de gestión de compras <a>(2020)</a></p>
+        <p>Módulo Orden de Compra</p>
         <p class="ver-detalle" data-modal-target="#modalProyecto4">Ver Detalle</p>
       </div>
       </div>
@@ -194,31 +193,16 @@
 
 <footer>
   <div class="footer-container">
-
-
     <div class="follow-us">
       <p>Contáctame por mis redes profesionales</p>
-  </div>
+    </div>
   <div class="social-media">
       <a href="https://github.com/RaulArmasBenavides"><i class="fa-brands fa-github"></i></a> 
       <a href="https://www.linkedin.com/in/raul-armas/"><i class="fa-brands fa-linkedin"></i></a>
-      <!-- <a href="#"><i class="fab fa-tiktok"></i></a> -->
   </div>
-  <p class="rights-text">&copy; 2023 Desarrollado por Raúl Armas Benavides.</p>
-      <!-- <div class="left-colum">
-
-      </div> -->
-
-      <!-- <div class="right-col">
-          <h1>Our Newsletter</h1>
-          <div class="border"></div>
-          <p>Enter your Email to get our news and updates.</p>
-          <form action="" class="newsletter-from">
-          <input type= "text" class="txtb" placeholder="Enter Your Email"></input>
-          <input type="submit" class="btn" value="submit">
-          </form>
-      </div> -->
-
+  <div>
+    <p class="rights-text">&copy; 2023 Desarrollado por Raúl Armas Benavides.</p>
+  </div>
   </div>
 </footer>
 </body>

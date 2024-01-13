@@ -1,3 +1,4 @@
+/*ESTILOS GLOBALES*/
 :root {
     --blanco : #ffff;
     --oscuro : #212121;
@@ -15,7 +16,6 @@
 html {
     font-size:62.5%;
     box-sizing: inherit;
-    /*scroll-snap-type: y mandatory;*/
 }
 
 body {
@@ -93,11 +93,9 @@ img {
 
 
 .contenedor {
-    max-width: 120rem;
     margin-top: 0;
     margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -117,7 +115,6 @@ img {
 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
-     
 }
  
 .navegacion__enlace:hover
@@ -217,54 +214,27 @@ img {
 }
 
 /**footer **/
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);  
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css); 
 footer{
+    position: relative;
     background:white;
-    padding: 50px 0;
+    padding:   0;
 }
 p{
     font-size: 15px;
 }
 .footer-container{
+ 
     max-width: 1300px;
     margin: auto;
     padding: 0 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap-reverse;
 }
 
-
-@media screen and (max-width:960px){
-
-    .footer-container{
-        max-width: 600px;
-    }
-    .right-col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .right-col h1{
-        width: 100%;
-        margin-bottom: 40px;
-    }
-    
-    .left-colum{
-        width: 100%;
-        text-align: center;
-    }
-
-    .social-media a{
-        margin-left: 15px;
-    }
-
-    .rights-text {
-        margin-left: 20px;
-    }
-}
 .logo_foot{
     width: 220px;
     margin-top: 30px;
@@ -273,7 +243,6 @@ p{
 .follow-us p{
     font-size: 18px;
     font-weight: bold;
-    margin-left: 0;
 }
 
 .social-media{
@@ -289,7 +258,7 @@ p{
 
 }
 .social-media a:hover{
-    color: var(--rojo_brillante);    /*rojo brillante */
+    color: var(--rojo_brillante);    
     cursor: pointer;
 }
 
@@ -373,6 +342,11 @@ p{
     cursor:pointer;
 }
 
+.header-titles{
+    display: flex;
+    margin-left: 40px;
+}
+
 
 .clearfix{
 	float: none;
@@ -435,17 +409,17 @@ header .contenedor {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);   /*FONDO DE MODAL*/
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .modal-content {
-    background-color: #ddd;
+    background-color: lightblue;
     font-size: 1.1em;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--secundario);
     width: 80%;
     transform: translateY(-100px);
     opacity: 0;
@@ -497,14 +471,33 @@ header .contenedor {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
 /* Estilo del Catálogo */
-.catalogo-proyectos .proyecto {
-    display: block;
+.catalogo-proyectos{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.catalogo-proyectos .row{
+    background-color: var(--blanco);
+    
+}
+
+.catalogo-proyectos .row .proyecto {
+    /* display: block; */
+    margin: 5px;
     background-color: var(--secondary);
  
 }
 
-.catalogo-proyectos .proyecto h2{
+
+.catalogo-proyectos .proyecto p{
+   font-size: 30px;
+   color: var(--secundario);
+}
+.catalogo-proyectos .proyecto h3{
     color: var(--blanco);
 }
 

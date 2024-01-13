@@ -1,4 +1,5 @@
 import '../css/about.css';
+import 'normalize.css';
 const languageButton = document.getElementById('languageButton');
 const content = document.getElementById('content');
 

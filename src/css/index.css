@@ -27,39 +27,3 @@
     transition: opacity .3s linear;
 }
  
-.page-content{
-    min-height: 100vh;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width:700px){
-    .btn{
-        margin: 0;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .social-media a{
-        margin-left: 15px;
-    }
-
-    .rights-text {
-     margin-left: 20px;
-    }
-}   
-
-/**nosotros.html**/
-.blocks{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
-}
-@media (min-width:768px) {
-    .blocks{
-        grid-template-columns: repeat(4,1fr);
-    }
-    
-}
