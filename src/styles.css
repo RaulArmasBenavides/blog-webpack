@@ -9,16 +9,13 @@
     --secondary:#003366;
     --navegacion : #333;
 }
-* {
-    box-sizing: border-box;
-  }
+ 
 /*globales*/ 
-html {
-    font-size:62.5%;
-    box-sizing: inherit;
-}
-
+ 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-size: 25px;
     font-family: 'Helvetica', sans-serif;
 }
@@ -35,7 +32,9 @@ body {
   
   }
 
-
+  section{
+    padding: 30px;
+  }
 
 
 h2,h3{
@@ -93,9 +92,10 @@ img {
 
 
 .contenedor {
+    padding: auto;
     margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
     text-align: center;
 }
 
@@ -217,18 +217,15 @@ img {
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);  
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css); 
 footer{
-    position: relative;
+     position: relative; 
     background:white;
-    padding:   0;
+    /* padding:   0; */
 }
 p{
     font-size: 15px;
 }
 .footer-container{
- 
-    max-width: 1300px;
-    margin: auto;
-    padding: 0 20px;
+    text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -289,16 +286,15 @@ p{
   
   .row
   {
-
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   /* Create two equal columns that floats next to each other */
-  .column {
+  /* .column {
     float: left;
     width: 50%;
     padding: 10px;
-  }
+  } */
   
   /* Clear floats after the columns */
   .row:after {
@@ -355,7 +351,7 @@ p{
 
 #global{
 	width: 65%;
-	margin: 0px auto;
+	/* margin: 0px auto; */
 	margin-top: 30px;
 	padding: 25px;
 	background: white;
@@ -477,7 +473,7 @@ header .contenedor {
 /* Estilo del Catálogo */
 .catalogo-proyectos{
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .catalogo-proyectos .row{

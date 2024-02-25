@@ -40,9 +40,6 @@
 /* FOOTERs */
 @media screen and (max-width:960px){
 
-    .footer-container{
-        max-width: 600px;
-    }
     .right-col {
         width: 100%;
         margin-bottom: 20px;
@@ -81,11 +78,52 @@
         width: 80%;
     }
 
-    .container {
-        padding: 0 20px;
-    }
 
     .wrapper {
         text-align: center;
+    }
+}
+
+@media (max-width: 1500px) { /* Ajusta este valor según tus necesidades */
+  
+    .catalogo-proyectos {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+        row-gap: 30px;
+    }
+    .catalogo-proyectos .proyecto p{
+        font-size: 18px;
+        color: var(--secundario);
+     }
+     
+     .catalogo-proyectos .proyecto h3{
+        color: var(--blanco);
+        font-size: 18px;
+    }
+    
+    .catalogo-proyectos .proyecto h4{
+        color: var(--blanco);
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1000px) { /* Ajusta este valor según tus necesidades */
+  
+    .catalogo-proyectos {
+        grid-template-columns: 1fr; /* Coloca los proyectos en una sola columna en pantallas pequeñas */
+    }
+
+    .catalogo-proyectos .proyecto p{
+        font-size: 13px;
+        color: var(--secundario);
+     }
+
+     .catalogo-proyectos .proyecto h3{
+        color: var(--blanco);
+        font-size: 13px;
+    }
+    
+    .catalogo-proyectos .proyecto h4{
+        color: var(--blanco);
+        font-size: 13px;
     }
 }
