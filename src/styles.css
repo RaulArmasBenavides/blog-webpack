@@ -147,14 +147,7 @@ img {
 
 
 /**cabecera **/
-.preset1
-{
-    background-image: url(../src/assets/modelo3.jpg);
-    background-size: cover;
-    height: 450px;
-    color:white;
-    position: relative;
-}
+ 
 
 .presethija{
     position: absolute;
